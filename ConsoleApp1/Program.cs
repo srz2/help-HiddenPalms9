@@ -78,8 +78,7 @@ namespace ConsoleApp1
                         break;
 
                     case 4: // Delete all logs // Is this the proper way? 
-                        note[0] = "";
-                        note[1] = "";
+                        logBook.Clear();
                         break;
                 }
             }
