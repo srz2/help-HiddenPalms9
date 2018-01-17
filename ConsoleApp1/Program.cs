@@ -83,3 +83,24 @@ namespace ConsoleApp1
         }
     }
 }
+
+
+
+
+ //SAMPLE switch Statement
+
+ //switch(variableName)
+ //{
+ //   case 0:
+ //   {
+ //       break;
+ //   }
+ //   case 1:
+ //   {
+ //       break;
+ //   }
+ //   default:
+ //   {
+ //       break;
+ //   }
+ //}
