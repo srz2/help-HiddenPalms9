@@ -51,7 +51,7 @@ namespace ConsoleApp1
                             {
                                 for(int c = 0; c < logBook.Count; c++)
                                 {
-                                    Console.WriteLine(logBook[c][0]);
+                                    Console.WriteLine(logBook[c]);
                                 }
                             }
                             break;
