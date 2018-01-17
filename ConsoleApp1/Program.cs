@@ -41,7 +41,7 @@ namespace ConsoleApp1
                             Console.WriteLine(DateTime.Now);
                             Console.WriteLine("Please, start writing on todays note entry:");
                             string text = Console.ReadLine(); //Can barely write any text....how do i expand?
-                            note[0] = title + "/t" + date + "/n" + text;
+                            note[0] = title + "\t" + date + "\n" + text;
                             logBook.Add(note);
                         }
                         break;
