@@ -49,7 +49,10 @@ namespace ConsoleApp1
                         {
                             Console.WriteLine("All logs:");
                             {
-                                Console.WriteLine(logBook);
+                                for(int c = 0; c < logBook.Count; c++)
+                                {
+                                    Console.WriteLine(logBook[c][0]);
+                                }
                             }
                             break;
                         }
