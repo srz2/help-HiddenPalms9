@@ -11,7 +11,6 @@ namespace ConsoleApp1
         static void Main(string[] args)
         {
             List<string> logBook = new List<string>(); // List where all the logs are supposed to be saved
-            string[] note = new string[1]; // Array where title and log/note is supposed to be
 
             int convertedChoice = 0;
             while (convertedChoice != 5) // Play menu until choice becomes 5 
@@ -58,14 +57,15 @@ namespace ConsoleApp1
                         }
                     case 3: // Search for a log // Doesnt work as expected 
                         Console.WriteLine("Search for log:");
-                        string search = Console.ReadLine();
+                        string search = Console.ReadLine().ToLower();
 
                         bool found = false;
-                        for (int i = 0; i < note.Length; i++)
+                        for (int i = 0; i < logBook.Count; i++)
                         {
-                            if (note[i] == search)
+                            if (logBook[i].ToLower().Contains(search))
                             {
                                 Console.WriteLine("Log was successfully found!"); // How do I make the found log show underneath this text? 
+                                Console.WriteLine(logBook[i]);
                                 found = true;
                                 break;
                             }
