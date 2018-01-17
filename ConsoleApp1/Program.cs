@@ -10,7 +10,7 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            List<string[]> logBook = new List<string[]>(); // List where all the logs are supposed to be saved
+            List<string> logBook = new List<string>(); // List where all the logs are supposed to be saved
             string[] note = new string[1]; // Array where title and log/note is supposed to be
 
             int convertedChoice = 0;
@@ -41,8 +41,8 @@ namespace ConsoleApp1
                             Console.WriteLine(DateTime.Now);
                             Console.WriteLine("Please, start writing on todays note entry:");
                             string text = Console.ReadLine(); //Can barely write any text....how do i expand?
-                            note[0] = title + "\t" + date + "\n" + text;
-                            logBook.Add(note);
+                            string entry = title + "\t" + date + "\n" + text;
+                            logBook.Add(entry);
                         }
                         break;
                     case 2: // Show all logs... // It doesnt work here...it doesnt show any logs at all actually 
